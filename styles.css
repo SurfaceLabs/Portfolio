@@ -11,7 +11,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6, span {
-  color: #242424;
+  color: #000000;
   text-align: center;
   line-height: 1.25;
 }
@@ -46,7 +46,7 @@ i:hover {
 }
 
 .link__hover-effect--white:after {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .link__hover-effect--black:after {
   background-color: #000;
@@ -79,12 +79,12 @@ li {
   padding: 0 12px;
 }
 
-.text--purple {
-  color: #6030b1;
+.text--orange {
+  color: #f17501;
 }
 
 section:nth-child(even) {
-  background-color: #f8f8f8;
+  background-color: #4e4e4e;
 }
 
 .section__title {
@@ -110,25 +110,25 @@ nav {
 
 .nav__link--anchor {
   margin: 0 12px;
-  color: #242424;
+  color: #000000;
   font-weight: 700;
 }
 
 .nav__link--anchor-primary {
-  background-color: #6030b1;
+  background-color: #ff0000;
   padding: 8px 20px;
   border-radius: 50px;
-  color: white;
+  color: rgb(0, 0, 0);
   transition: all 300ms ease;
 }
 
 .nav__link--anchor-primary:hover {
-  background-color: #5d3eff;
+  background-color: #f17501;
 }
 
 .personal__logo {
-  font-size: 24px;
-  color: #6030b1;
+  font-size: 32px;
+  color: #000000;
   margin: 0 12px;
   font-weight: bold
 }
@@ -149,6 +149,7 @@ nav {
 .about-me__info--container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
@@ -158,9 +159,9 @@ nav {
 .about-me__picture--mask {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 75%;
   overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 8px 16px #f17501;
   margin-bottom: 28px;
   animation: animate-profile-picture 800ms 200ms backwards;
 }
@@ -178,11 +179,11 @@ nav {
 }
 
 .about-me__picture {
-  width: 100%;
+  width: 100% ;
 
   /* Improving my own picture */
-  transform: scale(1.5);
-  padding-top: 8px;
+  transform: scale(1.25);
+  padding-top: 4px;
 }
 
 .about-me__info--title {
@@ -190,7 +191,7 @@ nav {
   animation: fade-up 650ms 400ms backwards;
 }
 .about-me__info--para {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 28px;
   animation: fade-up 650ms 600ms backwards;
 }
@@ -219,10 +220,11 @@ nav {
 .about-me__img--container {
   flex: 1;
   display: flex;
+ justify-content: center;
   align-items: center;
 }
 .about-me__img {
-  width: 100%;
+  width: 50%;
   animation: fade-in 1200ms 800ms backwards;
 }
 
@@ -235,28 +237,11 @@ nav {
   }
 }
 
-.wave {
-  display: inline-block;
-  animation: animate-wave 500ms infinite ease-in-out;
-}
-
-@keyframes animate-wave {
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(30deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-
 /* TECH - STACK */
 
 .language__img {
   width: 100%;
-  max-width: 100px;
+  max-width: 70px;
   transition: all 300ms;
 }
 .language:hover .language__img {
@@ -275,7 +260,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px 16px;
+  padding:16px;
 }
 
 .language__list {
@@ -301,7 +286,7 @@ nav {
 /* PROJECTS */
 
 .project {
-  margin-bottom: 135px;
+  margin-bottom: 100px;
 }
 
 .project:last-child {
@@ -327,7 +312,7 @@ nav {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #1c1d25;
+  background-color: #000000;
   opacity: 0;
   transition: all 450ms ease;
   z-index: 2;
@@ -353,7 +338,7 @@ nav {
 
 .project__description {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 90px;
   transform: translateY(100%);
   max-width: 550px;
@@ -380,7 +365,7 @@ nav {
 .project__description--para,
 .project__description--link {
   text-align: left;
-  color: #fff;
+  color: #f17501;
 }
 
 /* FOOTER */
@@ -394,7 +379,7 @@ footer {
   max-width: 500px;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 }
 .footer__row {
   display: flex;
@@ -405,8 +390,8 @@ footer {
 }
 
 .footer__logo--img {
-  width: 300px;
-  height: 300px;
+  width:200px;
+  height:200px;
   padding:0px;
 }
 
@@ -419,14 +404,14 @@ footer {
 .footer__logo--popper {
   position: absolute;
   right: 0;
-  top: 30px;
+  top: 8px;
   font-weight: 700;
   opacity: 0;
   transition: all 300ms ease;
 }
 
 .footer__anchor {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   position: relative;
 }
 
